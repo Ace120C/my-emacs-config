@@ -14,3 +14,6 @@
 ;; Enable Evil
 (require 'evil)
 (evil-mode 1)
+
+;; Enable Synatax Highlighting (Max Decoration)
+(setq font-lock-maximum-decoration t)
