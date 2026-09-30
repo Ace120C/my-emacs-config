@@ -19,6 +19,9 @@
 ;; Enable Synatax Highlighting (Max Decoration)
 (setq font-lock-maximum-decoration t)
 
+;; Enable Auto-Balance
+(electric-pair-mode 1)
+
 ;; MELPA
 (require 'package)
 
@@ -28,7 +31,6 @@
 (package-initialize)
 
 ;; Go LSP
-
 (setenv "PATH"
 	(concat "/home/ace/go/bin/:" (getenv "PATH")))
 
